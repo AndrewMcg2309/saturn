@@ -4,10 +4,11 @@ on:
     types:
       - closed
 jobs:
-  if_merged:
+  Merge_Master_Run:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
+      - run: echo "This is for deploying the code to AWS with the updated details"
       - run: echo "This will only run when a pull request is merged with master"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
