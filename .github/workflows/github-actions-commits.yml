@@ -7,6 +7,10 @@ jobs:
       - run: echo "This runs after every commit"
       - run: echo "Running checks on the code pushed"
       - run: echo "This is very lightweight and just for quick on specific checks"
+      - run: cd ~/home/runner/work/web-project-blue
       - run: pwd
       - run: ls -al
       - run: zip -r html.zip web
+      - run: cd ~/home
+      - run: pwd
+      - run: ls -al
