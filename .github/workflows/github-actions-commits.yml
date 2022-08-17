@@ -14,4 +14,5 @@ jobs:
       - name: list the files in repo
         run: |
           ls ${{ github.workspace }}
-      - run: zip -r html.zip web
+      - run: zip -r web.zip web
+      - run: mv web.zip html.zip
