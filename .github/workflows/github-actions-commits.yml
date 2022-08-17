@@ -7,10 +7,11 @@ jobs:
       - run: echo "This runs after every commit"
       - run: echo "Running checks on the code pushed"
       - run: echo "This is very lightweight and just for quick on specific checks"
-      - run: cd ..
+      - name: Check out the repo code
+        uses: actions/checkout@v3
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: pwd
-      - run: ls -al
+      - name: list the files in repo
+        run: |
+          ls ${{ github.workspace }}
       - run: zip -r html.zip web
-      - run: cd ~/home
-      - run: pwd
-      - run: ls -al
