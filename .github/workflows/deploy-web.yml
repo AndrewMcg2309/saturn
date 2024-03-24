@@ -1,8 +1,7 @@
-name: GitHub Actions
+name: Deploy to Website
 on:
-  pull_request:
-    types:
-      - closed
+  workflow_dispatch:
+
 jobs:
   Merge_Master_Run:
     if: github.event.pull_request.merged == true
