@@ -1,14 +1,21 @@
-name: Deploy to Website
+name: Deploy to Website 🛫
 on:
   workflow_dispatch:
 
 jobs:
-  Merge_Master_Run:
-    if: github.event.pull_request.merged == true
+  deploy_website:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This is for deploying the code to AWS with the updated details"
-      - run: echo "This will only run when a pull request is merged with master"
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Deploy to AWS
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${ { secrets.EC2_SSH_KEY }}
+          REMOTE_HOST: ${ { secrets.HOST_DNS }}
+          REMOTE_USER: ${ { secrets.USERNAME }}
+          TARGET: ${ { secrets.TARGET_DIR }}
 
 #      Access AWS
       - run: export AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY }}

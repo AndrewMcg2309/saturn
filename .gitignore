@@ -1,0 +1,33 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+./modules/*.tfvars
+./interview/*.tfvars
+*.pem
+venv/
+.idea/
+.terraform.lock.hcl
+#Python packages
+*botocore*
+*boto*
+*boto3*
+__pycache__
+*bin
+certifi*
+chardet*
+dateutil*
+idna*
+jmespath*
+lambda_multiprocessing*
+oauthlib*
+python_dateutil*
+requests*
+responses*
+s3transfer*
+six*
+urllib3*
