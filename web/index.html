@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -12,52 +12,28 @@
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark" id="mainNav">
         <div class="container"><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background: var(--bs-purple);"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link" href="#services">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Accounts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" style="color: rgb(255, 255, 255);">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" style="color: rgb(255, 255, 255);">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team" style="color: rgb(255, 255, 255);">Accounts</a></li>
+                    <li class="nav-item"></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background: url(&quot;assets/img/table.jpg&quot;);background-size: cover;">
+    <header class="masthead" style="background: url(&quot;assets/img/portfolio/overview.jpg&quot;);background-size: cover;">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in"><span>Andrew McGowan</span></div>
-                <div class="intro-heading text-uppercase"><span>Web portfolio</span></div><span>Associate DevOps Engineer&nbsp;</span>
+                <div class="intro-heading text-uppercase"><span>Web portfolio</span></div><span>DevOps Engineer&nbsp;</span>
             </div>
         </div>
     </header>
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">About Me</h2>
-                    <h3 class="text-muted section-subheading"></h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-user fa-stack-1x fa-inverse" style="background: var(--bs-teal);"></i></span>
-                    <h4 class="section-heading">Me</h4>
-                    <p class="text-muted">My name is Andrew McGowan from Dublin, Ireland&nbsp;</p>
-                </div>
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-laptop fa-stack-1x fa-inverse" style="background: var(--bs-teal);"></i></span>
-                    <h4 class="section-heading">College</h4>
-                    <p class="text-muted">I studied Computer Science in Technological University Dublin</p>
-                </div>
-                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-star fa-stack-1x fa-inverse" style="background: var(--bs-teal);"></i></span>
-                    <h4 class="section-heading">Occupation</h4>
-                    <p class="text-muted">I work as an associate DevOps engineer for the global payroll company Immedis since August 2021</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-light" id="portfolio">
+    <section class="bg-light" id="portfolio" style="padding: 100px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -67,9 +43,9 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal1" data-bs-toggle="modal">
-                        <div class="portfolio-hover" style="background: var(--bs-teal);">
+                        <div class="portfolio-hover" style="background: var(--bs-gray);">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/1-thumbnail.jpg">
+                        </div><img class="img-fluid" src="assets/img/portfolio/vr.jpg" width="400" height="260" style="height: 300px;">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Virtual Reality Therapy in Paediatrics</h4>
@@ -77,29 +53,29 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal2" data-bs-toggle="modal">
-                        <div class="portfolio-hover" style="background: var(--bs-teal);">
+                        <div class="portfolio-hover" style="background: var(--bs-gray);">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/2-thumbnail.jpg">
+                        </div><img class="img-fluid" src="assets/img/portfolio/website.jpg" style="height: 300px;">
                     </a>
                     <div class="portfolio-caption">
-                        <h4 style="color: var(--bs-blue);">Blue Project&nbsp;</h4>
-                        <p class="text-muted">Personal E2E web project</p>
+                        <h4 style="color: var(--bs-dark);">SATURN (execution/ improvements)</h4>
+                        <p class="text-muted">E2E web project (AWS, GitHub, Bootstrap Studio)</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal3" data-bs-toggle="modal">
-                        <div class="portfolio-hover" style="color: var(--bs-purple);background: var(--bs-teal);">
+                        <div class="portfolio-hover" style="color: var(--bs-purple);background: var(--bs-gray);">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/3-thumbnail.jpg">
+                        </div><img class="img-fluid" src="assets/img/portfolio/nfl.jpg" style="height: 300px;width: 400px;">
                     </a>
                     <div class="portfolio-caption">
-                        <h4 style="color: var(--bs-red);">Red Project</h4>
-                        <p class="text-muted">Python project for automatic trading of stocks</p>
+                        <h4 style="color: var(--bs-emphasis-color);">MARS (early/planning)</h4>
+                        <p class="text-muted">Project for scraping NFL matches and predicting a winner (Python)</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal4" data-bs-toggle="modal">
-                        <div class="portfolio-hover" style="background: var(--bs-teal);">
+                        <div class="portfolio-hover" style="background: var(--bs-gray);">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/4-thumbnail.jpg">
+                        </div><img class="img-fluid" src="assets/img/portfolio/channels.jpg" style="height: 300px;">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Digital Channels</h4>
@@ -107,34 +83,34 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal5" data-bs-toggle="modal">
-                        <div class="portfolio-hover" style="background: var(--bs-teal);">
+                        <div class="portfolio-hover" style="background: var(--bs-gray);">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/5-thumbnail.jpg">
+                        </div><img class="img-fluid" src="assets/img/portfolio/cloud.jpg" style="height: 300px;">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Associate DevOps Engineer</h4>
-                        <p class="text-muted">Immedis</p>
+                        <h4>DevOps Engineer</h4>
+                        <p class="text-muted">Immedis / UKG</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#portfolioModal6" data-bs-toggle="modal">
-                        <div class="portfolio-hover" style="background: var(--bs-teal);">
+                        <div class="portfolio-hover" style="background: var(--bs-gray);">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/portfolio/6-thumbnail.jpg">
+                        </div><img class="img-fluid" src="assets/img/portfolio/technologies.jpg" style="height: 300px;">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Technologies</h4>
-                        <p class="text-muted">Technologies used</p>
+                        <p class="text-muted">List of technologies used</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" style="padding: 100px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase">Experience</h2>
-                    <h3 class="text-muted section-subheading">My Timeline</h3>
+                    <h2 class="text-uppercase">Experience TimeLINE</h2>
+                    <h3 class="text-muted section-subheading"></h3>
                 </div>
             </div>
             <div class="row">
@@ -181,10 +157,10 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>August 2021 - Present</h4>
-                                    <h4 class="subheading">Immedis</h4>
+                                    <h4 class="subheading">Immedis / UKG</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted"><strong>Associate DevOps Engineer</strong><br><br></p>
+                                    <p class="text-muted"><strong>DevOps Engineer (Team Anchor)</strong><br><br></p>
                                 </div>
                             </div>
                         </li>
@@ -219,8 +195,8 @@
                     </div>
                 </div>
                 <div class="col-sm-4" style="margin: 0px;">
-                    <div class="team-member"><a href="#"><img class="rounded-circle mx-auto" src="assets/img/team/android.png"></a>
-                        <h4>Other</h4>
+                    <div class="team-member"><a href="#"><img class="rounded-circle mx-auto" src="assets/img/portfolio/overview.jpg"></a>
+                        <h4>Portfolio</h4>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item"></li>
@@ -232,22 +208,6 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4"><span class="copyright">Andrew McGowan</span></div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"></li>
-                        <li class="list-inline-item"></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks"></ul>
-                </div>
-            </div>
-        </div>
-    </footer>
     <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -256,13 +216,13 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <h2 class="text-uppercase">Virtual reality therapy in paediatrics</h2>
-                                <p class="text-muted item-intro">Final year project and dissertation</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p class="text-muted item-intro">Final year project and dissertation</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/vr.jpg">
                                 <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal" style="background: var(--bs-purple);"><i class="fa fa-times"></i><span style="--bs-primary: #6f42c1;--bs-primary-rgb: 111,66,193;--bs-warning: #6f42c1;--bs-warning-rgb: 111,66,193;background: var(--bs-purple);border-color: var(--bs-purple);">&nbsp;Close Project</span></button>
+                                    <li><strong>Project:</strong> Virtual Reality Therapy in Paediatrics (VRT)</li>
+                                    <li><strong>Technologies:&nbsp;</strong>Github, C#, Unity, Oculus VR</li>
+                                    <li><strong>Link:&nbsp;</strong>https://github.com/AndrewMcg2309/VR-Anxiety-Therapy</li>
+                                </ul>
+                                <p style="text-align: left;"><strong><span style="text-decoration: underline;">Overview</span></strong><br>Virtual Reality Therapy in Paediatrics (or VRT) was a virtual realty application to help anxious children<br>receiving intramuscular injections. The focus of VRT was for the deltoid muscle of the arm which is the most common for vaccines. VRT targeted children above the age of 8 years old to assist them in the process of getting injections.<br><br>The main objective of VRT is to provide a comfortable virtual environment that will help children who<br>get anxious or nervous while receiving injections to distract them from what is happening and<br>immerse them in a virtual world. <br><br>VRT was essentially a game that would immerse the children enough that they wouldn't see nor feel the needle, while also making the game immersible enough without too much movement which would disrupt the procedure.<br><br>The dissertation was 23k words and 100 pages long. The VR application and dissertation received a first as a grade.<br><br><strong><span style="text-decoration: underline;">Technologies and Methodologies</span></strong><br><br>Feature-Driven Development was the best course of action in terms of software<br>development. This meant each feature would be added one at a time. Using Git to create<br>branches allowing for these features to be implemented and if the feature failed, the<br>application could roll back to before the attempt was made.<br><br>Unity was used for the application as it was the most widely used and a powerful 3D game development engine. Unity also combines its built-in user interface with C# coding. Visual Studio was the default editor used.<br><br>Oculus Rift was the VR headset used and can be easily implemented with Unity to provide a virtual reality experience in your own application.<br><br>Full dissertation can be provided on request.</p><button class="btn btn-primary" type="button" data-bs-dismiss="modal" style="background: var(--bs-purple);"><i class="fa fa-times"></i><span style="--bs-primary: #6f42c1;--bs-primary-rgb: 111,66,193;--bs-warning: #6f42c1;--bs-warning-rgb: 111,66,193;background: var(--bs-purple);border-color: var(--bs-purple);">&nbsp;Close Project</span></button>
                             </div>
                         </div>
                     </div>
@@ -277,14 +237,14 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">Saturn</h2>
+                                <p class="text-muted item-intro">E2E web project (AWS, GitHub, Bootstrap Studio)</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/website.jpg">
                                 <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
+                                    <li></li>
                                     <li>Client: Threads</li>
                                     <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                                </ul>
+                                <p style="text-align: left;">Saturn is an E2E project for a website (the one we are in). The idea behind it was to use AWS cloud architecture to host a website. Along with this, GitHub actions will provide the CI/CD for updating the website with any changes that were made.&nbsp;<br><br>This is a very basic use of AWS services but used as a good baseline for any web project. It's main purpose however, is its use as an online portfolio.<br><br><strong>Main AWS Services Involved</strong><br>EC2 (Ubuntu) - As a host for the Web Server<br>ALB + Target Group - Reverse proxy for access to the web page.<br>VPN&nbsp;<br>Route53&nbsp; - Routing the URL through the load balancer<br><br><strong>Other Services</strong><br>Hosting Ireland (for the domain)<br>Apache2 Web Server (most common web server for lLinux systems)<br>GitHub&nbsp;<br><br><strong>Next Steps:</strong><br>- Next step is to make it through terraform (step underway)<br>Configure terraform code to create all the infrastructure on AWS<br><br>- Automate the update process on GitHub<br>&nbsp;Use GitHub actions to deploy/ update the website on EC2<br><br>- Packer for EC2 images&nbsp;<br><br>- Mobile app to start/stop EC2 instance</p><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
                             </div>
                         </div>
                     </div>
@@ -299,14 +259,14 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">MArs</h2>
+                                <p class="text-muted item-intro">Python Project</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/nfl.jpg" width="590" height="472">
                                 <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                                    <li></li>
+                                    <li></li>
+                                    <li>Python Data Manipulation&nbsp;</li>
+                                </ul>
+                                <p style="text-align: left;">The objective of this project is to scrape information from 'https://www.pro-football-reference.com/' in multiple places. The purpose of this is to scrape data and then use pythons great data manipulation ability to determine a winner.<br><br>1. Scrape the games being played in the specified week<br>2. Scrape data from how teams are currently performing. This can be multiple factors (games won-lost, number of starters injured, win-lose streaks, home/away etc)<br>3. Determine a winner<br><br><br></p><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
                             </div>
                         </div>
                     </div>
@@ -321,14 +281,14 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">Bank of Ireland</h2>
+                                <p class="text-muted item-intro">Digital Channels Internship</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/channels.jpg">
                                 <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                                    <li></li>
+                                    <li></li>
+                                    <li>3rd Year Internship (6 months)</li>
+                                </ul>
+                                <p style="text-align: left;"><strong>End to End Development</strong>– Experienced the end-to-end development of an API, learning from each group involved<br>over a sprint (3-week period)<br><strong>Project Work</strong><br>– Worked on different projects providing analysis and research<br><strong>Updating Live Website</strong><br>– Managed rates on the live website daily<br><strong>IT &amp; Procurement</strong><br>– Assisted in the development of the new IT &amp; Procurement Manual<br><strong>Daily Reports on the Mobile Application</strong><br>– Responsible for daily reports on the new mobile application deployment</p><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
                             </div>
                         </div>
                     </div>
@@ -343,14 +303,14 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">Devops Engineer</h2>
+                                <p class="text-muted item-intro">DevOps Engineer, Immedis / UKG</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/cloud.jpg">
                                 <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
-                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                                    <li></li>
+                                    <li><strong>Role</strong>: DevOps Engineer (Team Anchor)</li>
+                                    <li><strong>Date</strong>: Aug 21 - Present</li>
+                                </ul>
+                                <p style="text-align: left;"><strong>Infrastructure as Code &amp; Cloud Computing</strong><br>- Building, approving changes, and updating AWS clusters using Terraform.<br>- EC2, RDS Aurora Clusters, RabbitMQ, ECR, Route53, ELB, Packer, Consul, Nomad.<br>- OS: Ubuntu/Linux &amp; MacOS<br><strong>Release Management</strong><br>- Creating releases and deploying to production and other environments.<br>- Creating suitable lifecycles for the release process.<br><strong>CI/CD Pipelines</strong><br>- Creating and improving CI/CD pipelines with GitHub, AWS and Octopus Deploy.<br>- Adding and testing appsettings using Ansible and J2.<br>- Experience with Bitbucket and Azure also.<br><strong>Automation</strong><br>- Building automation scripts using Python or Bash.<br><strong>Monitoring and Alerting</strong><br>- Monitoring of all clusters/ environments using Grafana.<br>- Use of Grafana IRM for alerting environment and release issues.<br>- Datasources and tools: Telegraf, InfluxDB, Prometheus, and Loki.<br><strong>Production Metrics</strong><br>- Gathering of metrics for reports on production performance.<br><br><br><strong>Responsibilities:&nbsp;</strong><br><strong>Anchor Role (1yr 8 months)</strong><br>"A person or thing that can be relied on for support, stability, or security"<br><br>- Used as the main PoC for the team<br>- Monitoring and Responding to issues for all 9 clusters (103+ environments, 26 main)<br>- Leading the D&amp;R process for 2 years<br>- Approving GitHub PRs, including terraform changes<br>- Applying infrastructure changes with terraform to Production and other environments.<br>- Driving team meetings (introduced show &amp; tell every two weeks for everyone to share their infrastructure changes)<br>- On-call for 2 week blocks<br><br><br><br></p><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
                             </div>
                         </div>
                     </div>
@@ -365,13 +325,15 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">Technologies Overview</h2><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/technologies.jpg">
+                                <p class="text-muted item-intro" style="height: 22px;font-size: 23px;"><strong>Technology &amp; Services</strong></p>
+                                <p style="text-align: center;"><strong>Frequently Used</strong><br>AWS&nbsp;<br>Github<br>Terraform&nbsp;<br>Octopus Deploy<br>Grafana<br>Ubuntu Linux<br>Nomad<br><br><strong>Regularly Used</strong><br>Bash<br>Ansible<br>Consul<br>Docker<br>Packer<br><br><strong>Moderately Used&nbsp;</strong><br>Python<br>Postman<br>Azure Applications<br><br><strong>Used before&nbsp;(not recent)&nbsp;</strong><br>Bitbucket&nbsp;<br>Azure Pipelines&nbsp;<br>Kemp<br><br><br></p>
+                                <p class="text-muted item-intro" style="height: 22px;font-size: 23px;"><strong>AWS Services</strong></p>
+                                <p style="text-align: center;"><strong>EC2</strong><br>Instances<br>AMIs (packer)<br>Security Groups<br>Volumes<br>ALBs<br>Target Groups<br>ASGs<br><strong>VPC</strong><br>Subnets<br>Route tables<br>Internet gateways<br>Elastic IPs<br>NAT Gateways<br>Transit Gateways<br>VPC Peering<br><strong>Other</strong><br>RDS (aurora/ postgres)<br>S3<br>IAM<br>Route 53<br>Secrets Manager<br>Lambda<br>SNS<br>ECR<br>Prometheus<br><br></p>
                                 <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
                             </div>
                         </div>
