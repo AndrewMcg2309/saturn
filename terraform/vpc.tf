@@ -3,20 +3,23 @@ resource "aws_vpc" "base_vpc" {
   enable_dns_hostnames = true
 
   tags = {
-  Name : "${var.env} VPC" }
+    Name : "${var.env} VPC"
+  }
 }
 
 # internet gateway
 resource "aws_internet_gateway" "ig" {
   vpc_id = aws_vpc.base_vpc.id
   tags = {
-  Name : "${var.env} internet gateway" }
+    Name : "${var.env} internet gateway"
+  }
 }
 resource "aws_route_table" "internet_access_through_ig" {
   vpc_id = aws_vpc.base_vpc.id
 
   tags = {
-  Name : "${var.env}-connect-to-internet-through-ig" }
+    Name : "${var.env}-connect-to-internet-through-ig"
+  }
 }
 
 # keypair
