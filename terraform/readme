@@ -1,13 +1,40 @@
 Terraform requirments
 
-EC2 Instance
+ -- EC2 --
+
+Instance
+- t3.micro
+
 Load Balancer
+- https
+    - rules
+- http direct to https
+
 Target Group
+- port 80
+- health check "/ping"
+
 Securty Groups
+- out: all
+- in: ports 22, 80, 443 -> 0.0.0.0/0
+
+Route53
+- andrewmcgowan.ie -> application load balancer
+
+ -- VPC --
 
 VPC
-Subnets
+- eu-west-1
+
+Subnet
+- public subnet
+- eu-west-1a
+
+IGW
+
 Routetables
+- IGW
+- local
 
 
 Other:
