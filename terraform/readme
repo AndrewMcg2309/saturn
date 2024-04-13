@@ -1,0 +1,14 @@
+Terraform requirments
+
+EC2 Instance
+Load Balancer
+Target Group
+Securty Groups
+
+VPC
+Subnets
+Routetables
+
+
+Other:
+AMI (Packer)

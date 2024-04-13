@@ -15,6 +15,7 @@ variable "availability_zones" {
   default = "eu-west-1a"
 }
 
+# Required to be specified in tfvars
 variable "cidr_block" {}
 variable "public_subnets" {}
 variable "private_subnets" {}

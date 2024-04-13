@@ -1,5 +1,3 @@
-## subnets
-
 resource "aws_subnet" "public" {
   vpc_id                  = aws_vpc.base_vpc.id
   cidr_block              = var.public_subnets

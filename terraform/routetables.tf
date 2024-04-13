@@ -1,5 +1,3 @@
-## routetables
-
 resource "aws_route_table" "main_rt" {
   vpc_id = aws_vpc.base_vpc.id
 

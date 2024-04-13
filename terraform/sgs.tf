@@ -1,5 +1,3 @@
-## security groups
-
 resource "aws_security_group" "web_sg" {
   name        = "web_sg"
   description = "This firewall allows SSH, HTTP and MYSQL"
