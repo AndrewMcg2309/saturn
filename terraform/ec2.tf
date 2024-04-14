@@ -1,5 +1,3 @@
-## EC2
-
 resource "aws_instance" "web_server" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
@@ -15,6 +13,7 @@ resource "aws_instance" "web_server" {
 resource "tls_private_key" "web_server_pk" {
   algorithm = "RSA"
 }
+
 resource "aws_key_pair" "generated_key" {
   key_name   = "web_server_pk"
   public_key = tls_private_key.web_server_pk.public_key_openssh
@@ -23,6 +22,7 @@ resource "aws_key_pair" "generated_key" {
     tls_private_key.web_server_pk
   ]
 }
+
 resource "local_file" "key" {
   content         = tls_private_key.web_server_pk.private_key_pem
   filename        = "web_server_pk.pem"

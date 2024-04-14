@@ -15,8 +15,30 @@ variable "availability_zones" {
   default = "eu-west-1a"
 }
 
+variable "hosted_zone" {
+  type    = string
+  default = "Z0165134WM6CF9U4IRGK"
+}
+
+variable "ssl_certificate" {
+  type    = string
+  default = "arn:aws:acm:eu-west-1:098869234658:certificate/d5a85c26-610c-4fcc-ae19-15759a31c3cc" #andrewmcgowan.ie
+}
+
 # Required to be specified in tfvars
-variable "cidr_block" {}
-variable "public_subnets" {}
-variable "private_subnets" {}
-variable "env" {}
+
+variable "alb_subnets" {
+  type = list(any)
+}
+variable "cidr_block" {
+  type = string
+}
+variable "public_subnets" {
+  type = string
+}
+variable "private_subnets" {
+  type = string
+}
+variable "env" {
+  type = string
+}
