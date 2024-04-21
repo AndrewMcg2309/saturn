@@ -31,6 +31,3 @@ responses*
 s3transfer*
 six*
 urllib3*
-
-# mobile files with sensitive data
-saturn-app/saturn-app/saturn_appApp.swift
