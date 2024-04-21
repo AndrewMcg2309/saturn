@@ -1,0 +1,38 @@
+{
+   "version":"2.0",
+   "routeKey":"POST /startWebsite",
+   "rawPath":"/startWebsite",
+   "rawQueryString":"",
+   "headers":{
+      "accept":"*/*",
+      "accept-encoding":"gzip, deflate",
+      "content-length":"17",
+      "content-type":"application/json",
+      "host":"fyrbzl2e5j.execute-api.eu-west-1.amazonaws.com",
+      "user-agent":"python-requests/2.31.0",
+      "x-amzn-trace-id":"Root=1-662509e6-23ca3b7a2f0f10991465db6a",
+      "x-forwarded-for":"37.228.208.27",
+      "x-forwarded-port":"443",
+      "x-forwarded-proto":"https"
+   },
+   "requestContext":{
+      "accountId":"098869234658",
+      "apiId":"fyrbzl2e5j",
+      "domainName":"fyrbzl2e5j.execute-api.eu-west-1.amazonaws.com",
+      "domainPrefix":"fyrbzl2e5j",
+      "http":{
+         "method":"POST",
+         "path":"/startWebsite",
+         "protocol":"HTTP/1.1",
+         "sourceIp":"37.228.208.27",
+         "userAgent":"python-requests/2.31.0"
+      },
+      "requestId":"Wk58DhEVDoEEPGg=",
+      "routeKey":"POST /startWebsite",
+      "stage":"$default",
+      "time":"21/Apr/2024:12:43:18 +0000",
+      "timeEpoch":1713703398426
+   },
+   "body":"{\"task\": \"start\"}",
+   "isBase64Encoded":false
+}
