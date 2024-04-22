@@ -4,8 +4,9 @@ import json
 
 endpoint = "/stopWebsite"
 url = f'https://fyrbzl2e5j.execute-api.eu-west-1.amazonaws.com{endpoint}'
+json_start = {"task":"start"}
 
-req = requests.post(url)
+req = requests.post(url, json=json_start)
 print(req.status_code)
 
 
